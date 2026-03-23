@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --yellow: #FFD600;
+  --yellow-dim: #BFA000;
+  --bg: #0A0A0A;
+  --bg2: #111111;
+  --bg3: #181818;
+  --border: #222222;
+  --text: #F0F0F0;
+  --muted: #888888;
+  --card: #141414;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}
+
+/* Selection */
+::selection {
+  background: rgba(255, 214, 0, 0.2);
+  color: #fff;
+}
+
+/* Pulse animation for availability dot */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.pulse-dot {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Hover utilities — replaces onMouseEnter/onMouseLeave JS */
+.hover-lift {
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+.card-hover {
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+.card-hover:hover {
+  border-color: #333 !important;
+  transform: translateY(-3px);
+}
+.featured-hover:hover {
+  border-color: rgba(255,214,0,0.45) !important;
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+.btn-ghost-hover {
+  transition: border-color 0.2s ease;
+}
+.btn-ghost-hover:hover {
+  border-color: #444 !important;
+}
+.nav-link-hover {
+  transition: color 0.2s ease;
+}
+.nav-link-hover:hover {
+  color: var(--text) !important;
+}
+.footer-link-hover {
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+.footer-link-hover:hover {
+  color: var(--text) !important;
+}
+.service-card-hover {
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.service-card-hover:hover {
+  border-color: #2a2a2a !important;
+  transform: translateY(-3px);
+}
