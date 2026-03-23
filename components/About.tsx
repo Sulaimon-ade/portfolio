@@ -57,7 +57,7 @@ export default function About() {
             className="text-sm leading-relaxed mb-4"
             style={{ color: "var(--muted)" }}
           >
-            I&apos;m Suleiman Adeniyi — a full-stack developer based in Nigeria,
+            I&apos;m Suleiman Adeniyi — a full-stack developer,
             focused on building real-world digital products. I help startups and
             businesses turn ideas into scalable applications that actually work.
           </p>

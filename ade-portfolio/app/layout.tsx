@@ -19,7 +19,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Suleiman Adeniyi — Full-Stack Developer",
   description:
-    "Full-stack developer building scalable web and mobile apps for startups and businesses. Based in Nigeria. React, Node.js, PostgreSQL.",
+    "Full-stack developer building scalable web and mobile apps for startups and businesses. React, Node.js, PostgreSQL.",
   keywords: [
     "full-stack developer Nigeria",
     "React developer",
